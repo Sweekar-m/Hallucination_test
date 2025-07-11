@@ -71,7 +71,7 @@ If not matched:
 
     full_prompt = f"{system_prompt}\n\nuser_input: {user_msg}\nRespond with the correct JSON:"
 
-    client = genai.Client(api_key="AIzaSyDXR4RwrPwanJbQjbnXyT-GYGPAmSYNBOg")  # Replace with your valid key
+    client = genai.Client(api_key="API_KEY")  # Replace with your valid key
     response = client.models.generate_content(
         model="gemini-2.5-flash",
         contents=full_prompt
