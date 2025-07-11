@@ -81,7 +81,7 @@ Your only job is to read the `user_input` and check if it clearly matches **one 
     # Append user input to the content
     full_prompt = f"{system_prompt}\n\nuser_input: {user_msg}\nRespond with the correct JSON:"
 
-    client = genai.Client(api_key="AIzaSyDXR4RwrPwanJbQjbnXyT-GYGPAmSYNBOg")
+    client = genai.Client(api_key="API_KEY")
     response = client.models.generate_content(
         model="gemini-2.5-flash",
         contents=full_prompt
